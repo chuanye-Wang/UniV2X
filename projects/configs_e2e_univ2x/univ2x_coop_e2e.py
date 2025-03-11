@@ -942,8 +942,8 @@ model_ego_agent = dict(
 file_client_args = dict(backend="disk")
 
 dataset_type = "SPDE2EDataset"
-data_root = "datasets/V2X-Seq-SPD-New/cooperative/"
-info_root = "data/infos/V2X-Seq-SPD-New/cooperative/"
+data_root = "/home/yuhaibao/UniV2X/datasets/V2X-Seq-SPD-New/cooperative/"
+info_root = "/home/yuhaibao/UniV2X/data/infos/V2X-Seq-SPD-New/cooperative/"
 ann_file_train = info_root + f"spd_infos_temporal_train.pkl"
 ann_file_val = info_root + f"spd_infos_temporal_val.pkl"
 ann_file_test = info_root + f"spd_infos_temporal_val.pkl"
