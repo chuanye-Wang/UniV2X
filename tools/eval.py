@@ -1,9 +1,3 @@
-# import argparse
-# import os.path as osp
-# import mmcv
-# from mmcv import Config, DictAction
-# from projects.mmdet3d_plugin.datasets.bui import build_dataset
-# import time
 import argparse
 import cv2
 import torch
@@ -65,7 +59,15 @@ def main():
         'metric': args.eval,
         **kwargs
     })
-    
+
+    # for key in [
+    #                 'interval', 'tmpdir', 'start', 'gpu_collect', 'save_best',
+    #                 'rule'
+    #         ]:
+    #     eval_kwargs.pop(key, None)
+    # eval_kwargs.update(dict(metric=args.eval, **kwargs))
+
+    eval_kwargs.pop('interval', None)
     print(dataset.evaluate(outputs, **eval_kwargs))
 
 if __name__ == '__main__':

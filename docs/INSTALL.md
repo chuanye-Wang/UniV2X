@@ -23,6 +23,7 @@ export CUDA_HOME=YOUR_CUDA_PATH/
 **d. Install mmcv-full, mmdet and mmseg.**
 ```shell
 pip install mmcv-full==1.4.0
+# pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
 pip install mmdet==2.14.0
 pip install mmsegmentation==0.14.1
 ```
@@ -53,5 +54,5 @@ pip install -e .
 cd YOUR_UNIV2X_DIR
 git clone https://github.com/AIR-THU/UniV2X.git
 cd UniV2X
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```

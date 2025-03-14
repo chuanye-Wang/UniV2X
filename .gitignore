@@ -150,3 +150,7 @@ debug/
 projects/work_dirs_*
 val/
 datasets
+
+eval_results/
+mmdetection3d/
+projects/
